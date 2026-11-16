@@ -9,8 +9,12 @@ about: A question to answer or a decision to make; the outcome is an answer, not
 
 ### Context
 
-<!-- What prompted it, and what it blocks. -->
+<!-- What prompted it, what it blocks, and the options already in view. -->
 
-### Answer criteria
+### Criteria
 
-<!-- What a sufficient answer contains. -->
+<!-- What a sufficient answer contains, and where it is recorded. -->
+
+- [ ] 
+
+<!-- Optional section, added only when needed: "### Excluded". Filled examples: https://github.com/ramda-dev/.github/tree/main/examples -->
