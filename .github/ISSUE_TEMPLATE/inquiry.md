@@ -1,6 +1,7 @@
 ---
 name: Inquiry
 about: A question to answer or a decision to make; the outcome is an answer, not a change
+type: inquiry
 ---
 
 ### Question
