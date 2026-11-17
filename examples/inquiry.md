@@ -1,17 +1,24 @@
-# Example: an inquiry
+# Example: An Inquiry
 
-Rewritten from [nu-fluency#5](https://github.com/zaynram/nu-fluency/issues/5).
+This showcases an example of a decision to make, with its answer recorded as a file.
 
-| Outside the body | Value |
-| --- | --- |
-| Title | `hooks-placement` |
-| Type | inquiry |
-| Milestone | `v0.4.0` |
-| Parent | None |
-| Evidence | Deliverable |
+It was rewritten from an issue in a separate repository.
 
-## Body
+**Fields:**
 
+```json
+{
+  "title": "hooks-placement",
+  "type": "inquiry",
+  "milestone": "v0.4.0",
+  "parent": null,
+  "evidence": "deliverable"
+}
+```
+
+**Body:**
+
+```md
 ### Question
 
 Do the plugin's hooks live in a plugin-level `hooks.json`, or in skill-scoped frontmatter?
@@ -28,3 +35,4 @@ No hooks are shipped yet, so placement is undecided. The answer gates `nu-over-b
 ### Excluded
 
 - Hook implementation, which belongs to `nu-over-bash-hooks`
+```
