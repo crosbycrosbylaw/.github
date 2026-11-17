@@ -18,4 +18,4 @@ type: inquiry
 
 - [ ] 
 
-<!-- Optional section, added only when needed: "### Excluded". Filled examples: https://github.com/ramda-dev/.github/tree/main/examples -->
+<!-- Optional section, added only when needed: "### Excluded". Filled examples: https://github.com/crosbycrosbylaw/.github/tree/main/examples -->

@@ -25,4 +25,4 @@ about: A patch, bug, feature, chore or doc change
 
 - [ ] 
 
-<!-- Optional sections, added only when needed: "### Constraints" and "### Excluded". Filled examples: https://github.com/ramda-dev/.github/tree/main/examples -->
+<!-- Optional sections, added only when needed: "### Constraints" and "### Excluded". Filled examples: https://github.com/crosbycrosbylaw/.github/tree/main/examples -->

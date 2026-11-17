@@ -14,4 +14,4 @@
 
 <!-- What the reviewer or the author still has to do or decide. Write "None." when the pull request is ready as it stands. -->
 
-<!-- Filled example: https://github.com/ramda-dev/.github/blob/main/examples/pull-request.md -->
+<!-- Filled example: https://github.com/crosbycrosbylaw/.github/blob/main/examples/pull-request.md -->
