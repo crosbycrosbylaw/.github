@@ -1,0 +1,4 @@
+{
+  "name": "Reviewable label",
+  "description": "Adds the reviewable label when a pull request is ready for review, and removes it when the pull request returns to draft."
+}
