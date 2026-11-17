@@ -1,17 +1,24 @@
-# Example: a work item that ends in artifacts
+# Example: A Work Item with Deliverables
 
-Rewritten from [nushell-mcp#2](https://github.com/zaynram/nushell-mcp/issues/2).
+This showcases an example of a work item that ends in artifacts, with the optional Constraints section.
 
-| Outside the body | Value |
-| --- | --- |
-| Title | `pathext-omission` |
-| Type | bug |
-| Milestone | `v0.2.5` |
-| Parent | None |
-| Evidence | Deliverable |
+It was rewritten from an issue in a separate repository.
 
-## Body
+**Fields:**
 
+```json
+{
+  "title": "pathext-omission",
+  "type": "bug",
+  "milestone": "v0.2.5",
+  "parent": null,
+  "evidence": "deliverable"
+}
+```
+
+**Body:**
+
+```md
 ### Context
 
 On Windows, the nu children this server spawns cannot resolve external commands by bare name: `^where` fails while `^where.exe` succeeds. The MCP TypeScript SDK launches stdio servers with a fixed environment whitelist that omits `PATHEXT`, `COMSPEC` and `TMP`, and every spawn site here passes the inherited environment through unchanged.
@@ -40,3 +47,4 @@ None.
 - `cleanEnv` leaks nothing from the host beyond the explicit allowlist
 - Behavior on POSIX hosts is unchanged; the allowlist applies on Windows only
 - Each variable takes the host's value when present and a Windows default otherwise, matched case-insensitively
+```
