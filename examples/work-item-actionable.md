@@ -1,17 +1,24 @@
-# Example: a work item that leaves no artifact
+# Example: A Work Item without Deliverables
 
-Rewritten from [nu-fluency#13](https://github.com/zaynram/nu-fluency/issues/13).
+This showcases an example of a work item that leaves no artifact, with both optional sections.
 
-| Outside the body | Value |
-| --- | --- |
-| Title | `issue-status-backfill` |
-| Type | chore |
-| Milestone | `v0.4.1` |
-| Parent | None |
-| Evidence | Actionable |
+It was rewritten from an issue in a separate repository.
 
-## Body
+**Fields:**
 
+```json
+{
+  "title": "issue-status-backfill",
+  "type": "chore",
+  "milestone": "v0.4.1",
+  "parent": null,
+  "evidence": "actionable"
+}
+```
+
+**Body:**
+
+```md
 ### Context
 
 Closed issues #3 and #4 carry `status = 'completed'` while every task under them reads `completed = false`. The records no longer show what was done, so completion state does not survive past the session that produced it.
@@ -37,3 +44,4 @@ None.
 ### Excluded
 
 - Issues that are still open or were aborted
+```
