@@ -1,17 +1,27 @@
-# Example: an issue with sub-issues
+# Example: An Initiative with Leaves
 
-Rewritten from [nushell-mcp#8](https://github.com/zaynram/nushell-mcp/issues/8), which was filed as one issue. It is split here to show how the sections divide between a parent and its sub-issues: the parent states the outcome, and each sub-issue carries its own deliverables.
+This showcases an example of a parent issue with sub-issues.
 
-## The parent
+It was rewritten from a separate repository's work that contained several deliverables and was filed as a single issue.
+It is split here to show how the sections divide between a parent and its sub-issues: the parent states the outcome, and each sub-issue carries its own deliverables.
 
-| Outside the body | Value |
-| --- | --- |
-| Title | `windows-portability` |
-| Type | chore |
-| Milestone | `v0.3.0` |
-| Parent | None |
-| Evidence | Deliverable |
+## Parent
 
+**Fields:**
+
+```json
+{
+  "title": "windows-portability",
+  "type": "chore",
+  "milestone": "v0.3.0",
+  "parent": null,
+  "evidence": "deliverable"
+}
+```
+
+**Body:**
+
+```md
 ### Context
 
 The test suite assumes a POSIX host. Under Windows Bun, tests fail for reasons unrelated to the code they cover: temp paths handed to nu in double quotes are read as escape sequences, `--include-path` fragments drive-letter paths, and one test spawns the `sleep` external, which Windows lacks.
@@ -22,7 +32,10 @@ None of its own. Each sub-issue lists its deliverables.
 
 ### Actionables
 
-None.
+- [ ] Close each attached sub-issue
+- [ ] Verify the contents of all deliverables are acceptable
+
+Any issues identified with the deliverables after their issues are closed are opened as separate sub-issues.
 
 ### Criteria
 
@@ -32,17 +45,25 @@ None.
 ### Excluded
 
 - Changes to behavior on POSIX hosts
+```
 
-## One of its sub-issues
+## Sub-issue
 
-| Outside the body | Value |
-| --- | --- |
-| Title | `include-dirs-separator` |
-| Type | patch |
-| Milestone | None; a sub-issue takes its parent's |
-| Parent | `windows-portability` |
-| Evidence | Deliverable |
+**Fields:**
 
+```json
+{
+  "title": "include-dirs-separator",
+  "type": "patch",
+  "milestone": null,
+  "parent": "windows-portability",
+  "evidence": "deliverable"
+}
+```
+
+**Body:**
+
+```md
 ### Context
 
 `includeDirs` reaches nu through the `--include-path` flag, which fragments drive-letter paths on Windows.
@@ -59,3 +80,4 @@ None.
 ### Criteria
 
 - [ ] The raw-vehicle `includeDirs` test passes from a UNC working directory
+```
